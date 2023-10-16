@@ -4,7 +4,7 @@ const FORM_STATE = 'feedback-form-state';
 const formEl = document.querySelector('.feedback-form');
 let userData = {};
 
-formEl.addEventListener('input', throttle(onInputChange, 1000));
+formEl.addEventListener('input', throttle(onInputChange, 500));
 formEl.addEventListener('submit', onSubmit);
 
 onPageLoad();
